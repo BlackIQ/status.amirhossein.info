@@ -42,8 +42,8 @@ export default function Home({ services, error }) {
           }}
         >
           <Box>
-            <Typography fontWeight={900} fontSize={80} gutterBottom>
-              Amirhossein Services Status
+            <Typography fontWeight={900} fontSize={80} gutterBottom flexWrap>
+              Amir Services Status
             </Typography>
             <Typography
               fontWeight={400}
@@ -60,7 +60,7 @@ export default function Home({ services, error }) {
           </Box>
         </Box>
         {services ? (
-          <Grid container spacing={0}>
+          <Grid container>
             {services.map((service) => (
               <Grid md={6} sm={12} xs={12} item key={service.pid}>
                 <Service service={service} />

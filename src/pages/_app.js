@@ -22,18 +22,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <ThemeProvider theme={theme}>
-      <ApplicationLayout>
-        <Navbar />
-        <Container
-          sx={
-            {
-              // py: 3,
-            }
-          }
-        >
+      <Navbar />
+
+      <Container>
+        <ApplicationLayout>
           <Component {...pageProps} />
-        </Container>
-      </ApplicationLayout>
+        </ApplicationLayout>
+      </Container>
     </ThemeProvider>
   );
 }
