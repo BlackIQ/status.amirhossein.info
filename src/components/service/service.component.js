@@ -16,7 +16,7 @@ const ServiceComponent = ({ service }) => {
             }}
           >
             <Box>
-              <Typography variant="body1" gutterBottom>
+              <Typography variant="body1" fontWeight="bold" gutterBottom>
                 {service.name}
               </Typography>
               <Typography variant="body2">{service.pm2_env.status}</Typography>
