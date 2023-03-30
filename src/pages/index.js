@@ -5,7 +5,7 @@ import Head from "next/head";
 import { API } from "@/api";
 import { Service } from "@/components";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   try {
     const services = await API.get("services");
 
