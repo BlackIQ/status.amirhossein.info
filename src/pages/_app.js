@@ -23,7 +23,6 @@ export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-
       <Container>
         <ApplicationLayout>
           <Component {...pageProps} />

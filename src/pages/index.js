@@ -33,17 +33,28 @@ export default function Home({ services, error }) {
         <Toolbar />
         <Box
           sx={{
-            my: 20,
+            py: 20,
             height: "100%",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
+            background: "radial-gradient(circle at center, #ccc 0%, #fff 50%)",
           }}
         >
           <Box>
-            <Typography fontWeight={900} fontSize={80} gutterBottom flexWrap>
+            <Typography fontWeight={900} fontSize={80}>
               Amir Services Status
+            </Typography>
+            <Typography
+              fontWeight={600}
+              fontSize={20}
+              sx={{
+                mb: 10,
+              }}
+              gutterBottom
+            >
+              Powered by NextJs
             </Typography>
             <Typography
               fontWeight={400}

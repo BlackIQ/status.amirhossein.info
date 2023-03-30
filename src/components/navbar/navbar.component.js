@@ -13,7 +13,7 @@ import {
   MenuItem,
 } from "@mui/material";
 
-import { Menu as MenuIcon } from "@mui/icons-material";
+import { GitHub, Menu as MenuIcon } from "@mui/icons-material";
 
 const Navbar = () => {
   const apps = [
@@ -57,14 +57,14 @@ const Navbar = () => {
           <Toolbar disableGutters>
             <Link href="/" style={{ textDecoration: "none" }}>
               <Typography
-                variant="h6"
+                variant="h4"
                 color="primary"
+                fontFamily="Boogaloo"
                 sx={{
                   display: { xs: "none", md: "flex" },
-                  fontWeight: 700,
                 }}
               >
-                Amirhossein.app Services
+                amirhossein
               </Typography>
             </Link>
 
@@ -114,7 +114,7 @@ const Navbar = () => {
                   fontWeight: 700,
                 }}
               >
-                Amirhossein.app Services
+                amirhossein
               </Typography>
             </Link>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -123,7 +123,7 @@ const Navbar = () => {
                   key={app.id}
                   variant="text"
                   onClick={() => window.open(app.url)}
-                  sx={{ my: 3, mx: 1, display: "block" }}
+                  sx={{ mt: 1, ml: 3, display: "block" }}
                 >
                   {app.label}
                 </Button>
@@ -131,14 +131,13 @@ const Navbar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-              {/* <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                disableElevation
+              <IconButton
+                onClick={() =>
+                  window.open("https://github.com/BlackIQ/amirhossein.app")
+                }
               >
-                Login
-              </Button> */}
+                <GitHub color="primary" />
+              </IconButton>
               <Menu
                 sx={{ mt: "45px" }}
                 id="menu-appbar"
