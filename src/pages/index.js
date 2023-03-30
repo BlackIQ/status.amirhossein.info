@@ -53,9 +53,9 @@ export default function Home({ services, error }) {
               Welcome to Service Status - the app that keeps you informed about
               the status of your online services in real-time. No more manually
               checking for updates or wondering if a service is down. Whether
-              you're a business owner or an avid user of online services,
-              Service Status can save you time and help you stay on top of any
-              service disruptions. Try it out today!
+              youre a business owner or an avid user of online services, Service
+              Status can save you time and help you stay on top of any service
+              disruptions. Try it out today!
             </Typography>
           </Box>
         </Box>
