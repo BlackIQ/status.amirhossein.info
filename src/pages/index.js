@@ -29,7 +29,7 @@ export default function Home({ services, error }) {
       <Head>
         <title>Amirhossein.app Services Status</title>
       </Head>
-      <Box>
+      <Box sx={{ my: 5 }}>
         <Toolbar />
         <Box
           sx={{

@@ -19,8 +19,8 @@ const Navbar = () => {
   const apps = [
     {
       id: 1,
-      label: "Nilo",
-      url: "https://google.com",
+      label: "amirhossein.info",
+      url: "https://amirhossein.info",
     },
   ];
 
