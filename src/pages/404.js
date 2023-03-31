@@ -15,7 +15,11 @@ const NotFound = () => {
       }}
     >
       <Box>
-        <Typography fontWeight={900} fontSize={80} gutterBottom>
+        <Typography
+          fontFamily="Boogaloo"
+          fontSize={80}
+          gutterBottom
+        >
           You lost!?
         </Typography>
         <Button
