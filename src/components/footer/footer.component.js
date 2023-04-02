@@ -1,5 +1,7 @@
 import { Container, Box, Typography } from "@mui/material";
 
+import { appConfig } from "@/config";
+
 const Footer = () => {
   return (
     <Box
@@ -18,7 +20,7 @@ const Footer = () => {
           }}
         >
           <Typography color="white" variant="body1" fontSize={15}>
-            Powered by Next.Js
+            Version {appConfig.version} - Powered by Next.Js
           </Typography>
           <Typography color="white" variant="body1" fontSize={15}>
             Amirhossein Mohamamdi 2019 - {new Date().getFullYear()}
