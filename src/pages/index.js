@@ -90,8 +90,8 @@ export default function Home({ services, error }) {
             )}
             <br />
             {services.out ? (
-              Object.entries(services.out).map(([name, srvs]) => (
-                <Box>
+              Object.entries(services.out).map(([name, srvs], index) => (
+                <Box key={`external-${index}`}>
                   <Typography variant="h5" gutterBottom>
                     {name}
                   </Typography>
