@@ -54,7 +54,7 @@ export default function Home({ services, error }) {
               }}
               gutterBottom
             >
-              Powered by NextJs
+              Powered by Next.<small>Js</small>
             </Typography>
             <Typography
               fontWeight={400}
