@@ -1,5 +1,5 @@
-# Amirhossein.App Services Status
+# Amirhossein Services Status
 
-> Source of [amirhossein.app](https://amirhossein.app).
+> Source of [amirhossein.app](https://api.amirhossein.info).
 
 This is a **NextJs** application that its job is just showing the services status. Like GitHub Status.
