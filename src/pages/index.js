@@ -71,13 +71,47 @@ export default function Home({ services, error }) {
           </Box>
         </Box>
         {services ? (
-          <Grid container>
-            {services.map((service) => (
-              <Grid md={6} sm={12} xs={12} item key={service.pid}>
-                <Service service={service} />
-              </Grid>
-            ))}
-          </Grid>
+          <Box>
+            {services.in ? (
+              <Box>
+                <Typography variant="h5" gutterBottom>
+                  Internal services
+                </Typography>
+                <Grid container>
+                  {services.in.map((service) => (
+                    <Grid md={6} sm={12} xs={12} item key={service.pid}>
+                      <Service service={service} />
+                    </Grid>
+                  ))}
+                </Grid>
+              </Box>
+            ) : (
+              <Typography>No internal service is found</Typography>
+            )}
+            <br />
+            {services.out ? (
+              Object.entries(services.out).map(([name, srvs]) => (
+                <Box>
+                  <Typography variant="h5" gutterBottom>
+                    {name}
+                  </Typography>
+                  {srvs === false ? (
+                    <Typography>{name} has error in fetching data</Typography>
+                  ) : (
+                    <Grid container>
+                      {srvs.map((service) => (
+                        <Grid md={6} sm={12} xs={12} item key={service.pid}>
+                          <Service service={service} />
+                        </Grid>
+                      ))}
+                    </Grid>
+                  )}
+                </Box>
+              ))
+            ) : (
+              <Typography>No service is found for {name}</Typography>
+            )}
+          </Box>
         ) : (
           <Box
             sx={{
