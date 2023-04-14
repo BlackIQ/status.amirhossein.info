@@ -106,6 +106,7 @@ export default function Home({ services, error }) {
                       ))}
                     </Grid>
                   )}
+                  <br />
                 </Box>
               ))
             ) : (
